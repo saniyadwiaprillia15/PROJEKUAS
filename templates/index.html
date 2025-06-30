@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Daftar Makanan</title>
+</head>
+<body>
+    <div class="container">
+        <h1> Daftar Makanan</h1>
+        <a class="btn" href="{{ url_for('add') }}">+ Tambah Makanan</a>
+        {% for m in makanan %}
+        <div class="card">
+            <h3>{{ m.nama }}</h3>
+            <p><strong>Kategori:</strong> {{ m.kategori }}</p>
+            <p>{{ m.deskripsi }}</p>
+            <a class="btn" href="{{ url_for('edit', id=m.id) }}">Edit</a>
+            <a class="btn" href="{{ url_for('delete', id=m.id) }}" onclick="return confirm('Yakin hapus?')">Delete</a>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

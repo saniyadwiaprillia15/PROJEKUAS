@@ -1,0 +1,26 @@
+[
+    {
+        "id": 6,
+        "nama": "King Crab",
+        "kategori": "Main Course",
+        "deskripsi": "Makanan Berat"
+    },
+    {
+        "id": 4,
+        "nama": "Pancake Caramel",
+        "kategori": "snack",
+        "deskripsi": "makanan ringan"
+    },
+    {
+        "id": 5,
+        "nama": "Sushi",
+        "kategori": "makanan ringan f",
+        "deskripsi": "maknaan ringan"
+    },
+    {
+        "id": 4,
+        "nama": "spagheti bolognese",
+        "kategori": "main course",
+        "deskripsi": "makanan mie"
+    }
+]

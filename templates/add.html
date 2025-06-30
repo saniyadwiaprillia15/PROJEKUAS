@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Tambah Makanan</title>
+</head>
+<body>
+    <div class="container">
+        <h1> Tambah Makanan</h1>
+        <form method="POST">
+            <input type="text" name="nama" placeholder="Nama makanan" required>
+            <input type="text" name="kategori" placeholder="Kategori" required>
+            <textarea name="deskripsi" placeholder="Deskripsi" required></textarea>
+            <button type="submit">Simpan</button>
+        </form>
+    </div>
+</body>
+</html>
